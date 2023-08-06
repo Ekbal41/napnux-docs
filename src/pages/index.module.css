@@ -4,20 +4,102 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  background-color: #f7f7f7;
+  padding: 50px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+.version {
+  font-size: 10px;
+  color: #666;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
   position: relative;
-  overflow: hidden;
+  background-color: white;
+  padding: 0.4rem 0.7rem;
+  width: fit-content;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+.copy:hover {
+  border: 1px solid #fa9021;
+}
+
+.clipboard {
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.clipboard:hover {
+  transform: scale(1.1);
+}
+
+.copied {
+  background-color: #00a300;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.copy:hover .copied {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btnPrimary {
+  background-color: #fa9021;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  margin-top: 35px;
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content;
+}
+.btnPrimary > a {
+  color: #fff;
+  text-decoration: none;
+}
+.btnPrimary:hover {
+  background-color: #d47d1e;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

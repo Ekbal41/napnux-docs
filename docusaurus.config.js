@@ -64,17 +64,17 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "Napnux",
+        // title: "Napnux",
         logo: {
           alt: "Napnux Logo",
-          src: "img/logo.svg",
+          src: "img/napnux.png",
         },
         items: [
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Docs",
+            label: "Documentation",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
@@ -97,7 +97,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Napnux, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Napnux`,
       },
       prism: {
         theme: lightCodeTheme,
