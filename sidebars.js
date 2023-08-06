@@ -23,8 +23,25 @@ const sidebars = {
     {
       type: "category",
       label: "Getting Started",
-      link: {type: 'doc', id: 'get-started/get-started'},
-      items: ["get-started/hello-world","get-started/nux-cli"],
+      link: { type: "doc", id: "get-started/get-started" },
+      items: [
+        "get-started/hello-world",
+        "get-started/nux-cli",
+        "get-started/create-a-project",
+      ],
+    },
+    "static-files",
+    {
+      type: "category",
+      link: { type: "doc", id: "templating-engine/intro" },
+      label: "Templating Engine",
+      items: ["templating-engine/ejs"],
+    },
+    {
+      type: "category",
+      link: { type: "doc", id: "apps/intro" },
+      label: "Apps",
+      items: ["apps/creating-an-app"],
     },
   ],
 };

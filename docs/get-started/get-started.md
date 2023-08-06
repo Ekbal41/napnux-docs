@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Installing!
+# Installation
 
 You have already installed **node Js** in your pc.
 Now create a directory where your project will live. Try bellow commands.

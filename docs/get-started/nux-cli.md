@@ -18,24 +18,15 @@ This will create a basic projrct in the given directory.
 ```bash
 .
 ├── apps
-│   ├── root
-│   │   ├── views
-│   │   │   └── welcome.html
-│   │   ├── public
-│   │   ├── styles
-│   │   └── index.js
-│   │
 │   └── notes
 │       ├── views
-│       │   ├── home.html
-│       │   ├── update.html
-│       │   └── update.html
+│       │   └── welcome.html
 │       ├── public
 │       ├── styles
 │       └── index.js
 │
-│
-├── index.js
+├── root.js
+├── server.js
 ├── package.json
 
 ```
