@@ -4,6 +4,12 @@ sidebar_position: 6
 
 # Hello World!
 
+To get started with Napnux, let's create a simple "Hello World" app.  
+ Follow the steps below to set up and run the app.
+
+1. Create a new file named `app.js` in your project directory.
+2. Copy and paste the following code into your `app.js` file:
+
 ```javascript
 const napnux = require("napnux");
 const port = 3001;
@@ -13,16 +19,24 @@ napnux()
     res.end("Hello World");
   })
   .start(port, () => {
-    console.log(`Your first app listening on port ${port}`);
+    console.log(`Your first app is listening on port ${port}`);
   });
 ```
 
-### Run Locally
-
-You can run the app with the following command:
+Save the file.  
+Open your terminal or command prompt and navigate to your project directory.  
+3. Run the app using the following command:
 
 ```bash
 node app.js
 ```
 
-This will start the dev server at http://localhost:3000/ in your browser.
+This will start the development server, and you will see the following message in your terminal:
+
+```csharp
+Your first app is listening on port 3001
+```
+
+Open your web browser and navigate to http://localhost:3001/. You should see the "Hello World" message displayed in your browser.
+Congratulations! You've just created and run your first Napnux app. This basic example demonstrates how to set up a simple web server using Napnux and serve content to a web browser.
+

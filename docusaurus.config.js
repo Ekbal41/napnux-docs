@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Napnux",
   tagline: "Napnux - a simple and fast web framework for Node.js",
-  favicon: "img/favicon.ico",
+  favicon: "img/napnux-fav.png",
 
   // Set the production url of your site here
   url: "https://napnux.vercel.com",

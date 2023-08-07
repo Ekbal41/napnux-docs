@@ -1,25 +1,16 @@
 ---
 slug: welcome
-title: Welcome
-authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+title: Welcome to Napnux
+authors: [asif]
+tags: [npm, node js, napnux]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+Welcome to the world of Napnux – a framework poised to redefine the landscape of web development. As we step into the future of application creation, Napnux emerges as a beacon of innovation and simplicity, ready to empower developers with new possibilities.
 
-Simply add Markdown files (or folders) to the `blog` directory.
+Built on the strong foundations of npm and Node.js, Napnux encapsulates a vision where crafting web applications is intuitive, efficient, and captivating. With a focus on modularity and flexibility, Napnux empowers developers to shape their projects with finesse, while embracing the power of community-driven collaboration.
 
-Regular blog authors can be added to `authors.yml`.
+In its early days, Napnux invites you to embark on a journey of discovery. As you navigate through its features and delve into its capabilities, you'll uncover a framework designed to streamline your workflow, encourage experimentation, and inspire creativity. Whether you're a seasoned developer or a newcomer to the world of web development, Napnux welcomes you with open arms.
 
-The blog post date can be extracted from filenames, such as:
+Join us as we explore the potential of Napnux, create extraordinary applications, and contribute to a community that's passionate about driving the evolution of web development. Together, let's pave the way for a future where building web applications is an enriching and rewarding experience.
 
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
-
-A blog post folder can be convenient to co-locate blog post images:
-
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
-
-The blog supports tags as well!
-
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+Welcome to Napnux – where innovation takes root, and your web development journey begins.
