@@ -7,10 +7,10 @@ sidebar_position: 6
 The Napnux CLI (Command Line Interface) provides a convenient way to generate a project structure for your web applications. Follow these steps to use the Napnux CLI and understand the resulting project structure.
 
 1. **Install Napnux CLI:**  
-   Open your terminal or command prompt and install the Napnux CLI globally using the following command:
+   Open your terminal or command prompt and install the Napnux globally using the following command:
 
 ```bash
-npm install -g napnux-cli
+npm install -g napnux
 ```
 
 2. **Create a New Project:**
@@ -30,15 +30,17 @@ The Napnux CLI generates a project structure that promotes modularity and easy o
 ├── apps
 ├── views
 ├── public
-├── root.js
-├── server.js
+├── handler.js
+├── index.js
 └── package.json
+
 ```
 
 **apps:** This directory houses your individual apps. Each app has its own subdirectory containing views, static files, styles, and an `index.js` file.  
 **views:** This directory contains shared views/templates that can be used across different apps.  
 **public:** This directory is used to serve static files such as images, CSS, and JavaScript for your apps.  
-**root.js:** This file defines the root Napnux app.  
-**server.js:** This is the main entry point for your Napnux server.  
-**package.json:** The package file for your project, which includes dependencies and scripts.  
+**handler.js:** This file defines all the routes on / , Ex: /about, /contact.  
+**index.js:** This is the main entry point for your Napnux server.  
+**package.json:** The package file for your project, which includes dependencies and scripts.
+
 The generated project structure helps you build and manage multiple apps within a single project, allowing you to create modular and organized applications.

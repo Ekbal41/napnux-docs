@@ -1,4 +1,4 @@
-# Creating An App
+# Create An App
 
 Creating an app in Napnux is a straightforward process that allows you to build modular and maintainable components for your project. Let's walk through the process of creating an authentication app step by step.
 
@@ -87,4 +87,4 @@ It will create an app inside your projects apps folder, easy!
 
 ### Conclusion
 
-Congratulations! You've successfully created an authentication app using the Napnux framework. This app is now structured to handle routes, views, and static files in an organized and maintainable manner. You can further expand your app by adding authentication logic, views, and features as needed. With Napnux's modular approach, you can easily manage and extend your project by adding more apps for different functionalities. Happy coding!
+Congratulations! You've successfully created an authentication app using the Napnux framework. This app is now structured to handle routes, views, and static files in an organized and maintainable manner. You can further expand your app by adding authentication logic, views, and features as needed. With Napnux's modular approach, you can easily manage and extend your project by adding more apps for different functionalities.

@@ -15,28 +15,28 @@ To configure the ejs templating engine in Napnux, follow these steps:
 const path = require("path");
 ```
 
-2. Add the `.ejs()` method to your Napnux root app configuration in `server.js`:
+2. Add the `.ejs()` method to your Napnux handler app configuration in `index.js`:
 
 ```javascript
-// server.js
+// index.js
 const path = require("path");
-const root = require("./root.js");
+const handler = require("./handler.js");
 const port = 3000;
 
-root
+handler
   .static("public", path.join(__dirname, "public"))
   .ejs({
     views: path.join(__dirname, "views"), // Configure the views directory
   })
   .start(port, () => {
-    console.log(`> Server Listening on http://localhost:${port}`);
+    console.log(`> index Listening on http://localhost:${port}`);
   });
 ```
 
-3. Now you can render HTML templates from the `/views` folder. For example, in your `root.js` file:
+3. Now you can render HTML templates from the `/views` folder. For example, in your `handler.js` file:
 
 ```javascript
-// root.js
+// handler.js
 module.exports = napnux()
   .get("/", (req, res) => {
     res.render("hello"); // Render the "hello.ejs" template from the /views folder

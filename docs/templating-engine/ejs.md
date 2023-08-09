@@ -1,4 +1,4 @@
-# EJS
+# Ejs
 
 Napnux comes with the EJS (Embedded JavaScript) templating engine by default as a middleware. You don't need to add it separately; it's included out of the box. EJS allows you to dynamically generate HTML content by embedding JavaScript code within your templates.
 

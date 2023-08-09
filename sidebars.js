@@ -24,11 +24,7 @@ const sidebars = {
       type: "category",
       label: "Getting Started",
       link: { type: "doc", id: "get-started/get-started" },
-      items: [
-        "get-started/hello-world",
-        "get-started/nux-cli",
-        "get-started/create-a-project",
-      ],
+      items: ["get-started/hello-world", "get-started/nux-cli"],
     },
     "static-files",
     {
@@ -41,7 +37,13 @@ const sidebars = {
       type: "category",
       link: { type: "doc", id: "apps/intro" },
       label: "Apps",
-      items: ["apps/creating-an-app"],
+      items: ["apps/create-an-app", "apps/mount-an-app"],
+    },
+    {
+      type: "category",
+      link: { type: "doc", id: "deployment/intro" },
+      label: "Deployment",
+      items: [],
     },
   ],
 };

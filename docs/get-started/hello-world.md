@@ -7,8 +7,8 @@ sidebar_position: 6
 To get started with Napnux, let's create a simple "Hello World" app.  
  Follow the steps below to set up and run the app.
 
-1. Create a new file named `app.js` in your project directory.
-2. Copy and paste the following code into your `app.js` file:
+1. Create a new file named `index.js` in your project directory.
+2. Copy and paste the following code into your `index.js` file:
 
 ```javascript
 const napnux = require("napnux");
@@ -28,7 +28,7 @@ Open your terminal or command prompt and navigate to your project directory.
 3. Run the app using the following command:
 
 ```bash
-node app.js
+node index.js
 ```
 
 This will start the development server, and you will see the following message in your terminal:

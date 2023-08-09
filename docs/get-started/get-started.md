@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Installation
+# Getting Started
 
 To get started with Napnux, follow these steps for installation:
 
