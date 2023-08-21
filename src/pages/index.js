@@ -8,44 +8,22 @@ import styles from "./index.module.css";
 import { useState } from "react";
 import copy from "copy-to-clipboard";
 
-// function HomepageHeader() {
-//   const { siteConfig } = useDocusaurusContext();
-//   return (
-//     <header className={clsx("hero hero--primary", styles.heroBanner)}>
-//       <div className="container">
-//         <h1 className="hero__title">{siteConfig.title}</h1>
-//         <p className="hero__subtitle">{siteConfig.tagline}</p>
-//         <div className={styles.buttons}>
-//           <Link
-//             className="button button--secondary button--lg"
-//             to="/docs/intro"
-//           >
-//             Learn Napnux in 5 minutes ⏱️
-//           </Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
-
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={"A fast and low-overhead web framework for Node.js"}
       description="A fast and low-overhead web framework for Node.js"
     >
-      {/* <HomepageHeader /> */}
-      <Hero />
-
+      <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
     </Layout>
   );
 }
-
-function Hero() {
+function HomepageHeader() {
+  const { siteConfig } = useDocusaurusContext();
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopyClick = () => {
@@ -54,26 +32,21 @@ function Hero() {
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 1500); // Reset "Copied!" after 1.5 seconds
   };
-
   return (
-    <div className={styles.heroBanner}>
-      <div>
-        <p className={styles.title}>
-          Napnux<span className={styles.version}>1.0.3</span>
-        </p>
-        <p className={styles.subtitle}>
-          Fast and low-overhead web framework for Node.js.
-        </p>
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+      <div className="container">
+        <h1 className={styles.title}>{siteConfig.title}<span className={styles.version}>v1.5</span></h1>
+        <p className={styles.subtitle}>{siteConfig.tagline}</p>
         <div className={styles.copy} onClick={handleCopyClick}>
           <span className={styles.copyText}>$ npm install napnux</span>{" "}
           <span className={styles.clipboard}>📋</span>
         </div>
-        <div className={styles.btnPrimary}>
+        <div className={styles.btnBlack}>
           <Link className="" to="/docs/intro">
             Get Started
           </Link>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

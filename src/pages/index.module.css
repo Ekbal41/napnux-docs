@@ -1,18 +1,13 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  background-color: #f7f7f7;
-  padding: 50px;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
+  padding: 4rem 0;
+  text-align: start;
+  position: relative;
+  overflow: hidden;
 }
+
 .version {
   font-size: 10px;
-  color: #666;
+  color: #333;
   margin-bottom: 20px;
   margin-left: 5px;
 }
@@ -26,15 +21,16 @@
 
 .subtitle {
   font-size: 30px;
-  color: #666;
+  color: #333;
   margin-bottom: 20px;
+  font-family: monospace;
+  margin-top: 10px;
 }
 
 .copy {
   display: flex;
   align-items: center;
   position: relative;
-  background-color: white;
   padding: 0.4rem 0.7rem;
   width: fit-content;
   border-radius: 5px;
@@ -42,12 +38,18 @@
   font-size: 30px;
   margin-right: 5px;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid #fa9021;
   transition: border 0.3s;
+  background-color: #f68a17;
+}
+
+.copyText {
+  color: #333;
+  margin: 0 10px;
 }
 
 .copy:hover {
-  border: 1px solid #fa9021;
+  border: 1px solid #333;
 }
 
 .clipboard {
@@ -60,46 +62,36 @@
   transform: scale(1.1);
 }
 
-.copied {
-  background-color: #00a300;
+.btnBlack {
+  background-color: #333;
   color: #fff;
-  padding: 6px 12px;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-size: 14px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-}
-
-.copy:hover .copied {
-  opacity: 1;
-  visibility: visible;
-}
-
-.btnPrimary {
-  background-color: #fa9021;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 5px;
-  font-size: 20px;
-  border: none;
-  margin-top: 35px;
-  cursor: pointer;
+  font-size: 18px;
+  font-weight: semibold;
   text-decoration: none;
+  transition: background-color 0.3s;
   width: fit-content;
+  margin-top: 30px;
 }
-.btnPrimary > a {
+.btnBlack > a {
   color: #fff;
   text-decoration: none;
 }
-.btnPrimary:hover {
-  background-color: #d47d1e;
-  color: #fff;
+.btnBlack:hover {
+  background-color: #222;
   text-decoration: none;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+  .copyText {
+    font-size: 16px;
   }
 }

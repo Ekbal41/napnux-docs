@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Napnux",
-  tagline: "Napnux - a simple and fast web framework for Node.js",
+  tagline: "A simple and fast web framework for Node.js",
   favicon: "img/napnux-fav.png",
 
   // Set the production url of your site here
@@ -74,9 +74,10 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Documentation",
+            label: "Docs",
           },
           { to: "/blog", label: "Blog", position: "left" },
+
           {
             href: "https://github.com/Ekbal41/napnux",
             label: "GitHub",

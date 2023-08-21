@@ -30,7 +30,7 @@ The Napnux CLI generates a project structure that promotes modularity and easy o
 ├── apps
 ├── views
 ├── public
-├── handler.js
+├── ends.js
 ├── index.js
 └── package.json
 
@@ -39,7 +39,7 @@ The Napnux CLI generates a project structure that promotes modularity and easy o
 **apps:** This directory houses your individual apps. Each app has its own subdirectory containing views, static files, styles, and an `index.js` file.  
 **views:** This directory contains shared views/templates that can be used across different apps.  
 **public:** This directory is used to serve static files such as images, CSS, and JavaScript for your apps.  
-**handler.js:** This file defines all the routes on / , Ex: /about, /contact.  
+**ends.js:** This file defines all the routes on / , Ex: /about, /contact.  
 **index.js:** This is the main entry point for your Napnux server.  
 **package.json:** The package file for your project, which includes dependencies and scripts.
 

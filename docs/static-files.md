@@ -12,15 +12,15 @@ First, make sure to import the `path` module at the beginning of your` index.js`
 const path = require("path");
 ```
 
-Next, you can add the `.static()` method to your Napnux handler app configuration in `index.js`:
+Next, you can add the `.static()` method to your Napnux ends app configuration in `index.js`:
 
 ```javascript
 // index.js
 const path = require("path");
-const handler = require("./handler.js");
+const ends = require("./ends.js");
 const port = 3000;
 
-handler
+ends
   .static("public", path.join(__dirname, "public")) // Serve static files from the "public" directory
   .start(port, () => {
     console.log(`> index Listening on http://localhost:${port}`);
