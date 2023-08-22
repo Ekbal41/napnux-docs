@@ -17,10 +17,10 @@ Next, you can add the `.static()` method to your Napnux ends app configuration i
 ```javascript
 // index.js
 const path = require("path");
-const ends = require("./ends.js");
+const server = require("./ends.js");
 const port = 3000;
 
-ends
+server
   .static("public", path.join(__dirname, "public")) // Serve static files from the "public" directory
   .start(port, () => {
     console.log(`> index Listening on http://localhost:${port}`);

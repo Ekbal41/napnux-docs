@@ -5,25 +5,25 @@ sidebar_position: 6
 # Templating Engine
 
 Napnux supports a variety of templating engines commonly used in web development, such as  
- 'ejs', 'pug', 'dot', and more. By default, Napnux comes with the `ejs` templating engine for rendering HTML.
+ 'ejs', 'pug', 'dot', and more. By default, Napnux comes with the `ejs` and `nunjucks` templating engine for rendering HTML.
 
-To configure the ejs templating engine in Napnux, follow these steps:
+To configure the ejs or nunjucks templating engine in Napnux, follow these steps:
 
-1. Make sure to import the `path` module at the beginning of your s`erver.js` file:
+1. Make sure to import the `path` module at the beginning of your `server.js` file:
 
 ```javascript
 const path = require("path");
 ```
 
-2. Add the `.ejs()` method to your Napnux ends app configuration in `index.js`:
+2. Add the `.ejs()` method to your Napnux server configuration in `index.js`:
 
 ```javascript
 // index.js
 const path = require("path");
-const ends = require("./ends.js");
+const server = require("./ends.js");
 const port = 3000;
 
-ends
+server
   .static("public", path.join(__dirname, "public"))
   .ejs({
     views: path.join(__dirname, "views"), // Configure the views directory

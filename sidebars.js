@@ -31,7 +31,7 @@ const sidebars = {
       type: "category",
       link: { type: "doc", id: "templating-engine/intro" },
       label: "Templating Engine",
-      items: ["templating-engine/ejs"],
+      items: ["templating-engine/ejs","templating-engine/nunjucks"],
     },
     {
       type: "category",
