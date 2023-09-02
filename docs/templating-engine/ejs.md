@@ -5,14 +5,19 @@ Napnux comes with the EJS (Embedded JavaScript) templating engine by default as 
 The EJS middleware can be configured according to your needs. Here is an example configuration:
 
 ```javascript
-.ejs({
+.ejs()
+
+.use(napnux.ejs({
     views : path.join(__dirname, 'views'), // Views directory
     cache: process.env.NODE_ENV === "production", // Enable caching in production mode
     contentType: "text/html", // Content type for rendered templates
     status: 200, // HTTP status code to send, if set
     ext: "ejs", // File extension for templates (omit when rendering)
     options: {} // Additional options for EJS, refer to EJS documentation
-})
+}))
+
+
+
 ```
 
 In this configuration example:

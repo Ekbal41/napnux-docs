@@ -27,11 +27,12 @@ const sidebars = {
       items: ["get-started/hello-world", "get-started/nux-cli"],
     },
     "static-files",
+    "storage",
     {
       type: "category",
       link: { type: "doc", id: "templating-engine/intro" },
       label: "Templating Engine",
-      items: ["templating-engine/ejs","templating-engine/nunjucks"],
+      items: ["templating-engine/ejs"],
     },
     {
       type: "category",
@@ -45,6 +46,7 @@ const sidebars = {
       label: "Deployment",
       items: [],
     },
+
   ],
 };
 
